@@ -1,0 +1,102 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Checkout Container */
+.checkout-container {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Nykaa Logo */
+.nykaa-logo {
+    width: 130px;
+    display: block;
+    margin: 0 auto 15px;
+}
+
+/* Form Inputs */
+.form-group {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+}
+
+input {
+    width: 95%;
+    padding: 12px;
+    /* margin-top: 5px; */
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border 0.3s;
+}
+
+input:focus {
+    border-color: #fc2779;
+    outline: none;
+}
+
+/* Error Messages */
+.error-message {
+    color: #e63946;
+    font-size: 12px;
+    margin-top: 5px;
+    height: 14px;
+}
+
+/* Submit Button */
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    background-color: #fc2779;
+    color: white;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #e51d62;
+    transform: scale(1.03);
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 450px) {
+    .checkout-container {
+        width: 90%;
+        padding: 20px;
+    }
+}

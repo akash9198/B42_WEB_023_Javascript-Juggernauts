@@ -19,15 +19,16 @@ const logoutBtn = document.getElementById("logout-btn");
 const togglePassword = (inputField, toggleButton) => {
     if (inputField.type === "password") {
         inputField.type = "text";
-        toggleButton.textContent = "🙈"; // Hide icon
+        toggleButton.innerHTML = "🙈"; // Change to hide icon
     } else {
         inputField.type = "password";
-        toggleButton.textContent = "👁️"; // Show icon
+        toggleButton.innerHTML = "👁️"; // Change to show icon
     }
 };
 
+// Prevent form submission when clicking password toggle
 toggleSignupPassword?.addEventListener("click", (e) => {
-    e.preventDefault(); // Prevents accidental form submission
+    e.preventDefault();
     togglePassword(signupPassword, toggleSignupPassword);
 });
 
@@ -49,7 +50,7 @@ showSignup?.addEventListener("click", (e) => {
     e.preventDefault();
     loginBox.style.display = "none";
     signupBox.style.display = "block";
-    signupForm.reset();  
+    signupForm.reset();
     enablePasswordFields();
 });
 
@@ -61,11 +62,6 @@ showLogin?.addEventListener("click", (e) => {
     loginForm.reset();
     enablePasswordFields();
 });
-
-// Hashing function for simple security
-const hashPassword = (password) => {
-    return btoa(password); // Base64 encoding
-};
 
 // Handle Signup Form Submission
 signupForm?.addEventListener("submit", (e) => {
@@ -90,7 +86,7 @@ signupForm?.addEventListener("submit", (e) => {
         return;
     }
 
-    const hashedPassword = hashPassword(password);
+    const hashedPassword = btoa(password); // Base64 encoding
 
     localStorage.setItem("user", JSON.stringify({ name, email, password: hashedPassword }));
     alert("Signup successful! You can now log in.");
@@ -114,7 +110,7 @@ loginForm?.addEventListener("submit", (e) => {
         return;
     }
 
-    if (email !== savedUser.email || hashPassword(password) !== savedUser.password) {
+    if (email !== savedUser.email || btoa(password) !== savedUser.password) {
         alert("Invalid email or password.");
         loginForm.reset();
         enablePasswordFields();
