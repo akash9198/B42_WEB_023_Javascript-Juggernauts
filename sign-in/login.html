@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Nykaa Clone</title>
+    <link rel="stylesheet" href="styles/auth.css">
+</head>
+<body>
+
+    <!-- Login Box -->
+    <div id="login-box">
+        <h2>Login</h2>
+        <form id="login-form">
+            <input type="email" id="login-email" placeholder="Enter your email" required>
+            <div class="password-container">
+                <input type="password" id="login-password" placeholder="Enter your password" required>
+                <button type="button" id="toggle-login-password">👁️</button>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+        <p>Don't have an account? <a href="#" id="show-signup">Sign up</a></p>
+    </div>
+
+    <!-- Signup Box -->
+    <div id="signup-box" style="display: none;">
+        <h2>Sign Up</h2>
+        <form id="signup-form">
+            <input type="text" id="signup-name" placeholder="Enter your name" required>
+            <input type="email" id="signup-email" placeholder="Enter your email" required>
+            <div class="password-container">
+                <input type="password" id="signup-password" placeholder="Create a password" required>
+                <button type="button" id="toggle-signup-password">👁️</button>
+            </div>
+            <button type="submit">Sign Up</button>
+        </form>
+        <p>Already have an account? <a href="#" id="show-login">Login</a></p>
+    </div>
+
+    <script src="scripts/auth.js"></script>
+</body>
+</html>
