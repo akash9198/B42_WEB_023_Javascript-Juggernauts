@@ -7,18 +7,18 @@
 
 body {
   font-family: "Inter", sans-serif;
-  background-color: #f7f7f7;
-  color: white;
+  /* background-color: #f7f7f7; */
+  /* color: white; */
 }
 
 /* 🟢 TOP NAVBAR */
 #topNavbar {
   background: url(https://adn-static1.nykaa.com/media/wysiwyg/2021/common-strip.jpg);
   color: white;
-  padding: 12px 0;
+  padding: 12px 50px;
   font-size: 14px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -26,6 +26,7 @@ body {
   display: flex;
   gap: 20px;
   margin: 0 20px;
+  font-size: 15px;
 }
 
 .top-icons div {
@@ -120,7 +121,7 @@ body {
   background-color: #e80071;
   color: white;
   padding: 5px 12px;
-  border-radius: 3px;
+  border-radius: 8px;
   font-size: 14px;
   font-weight: 600;
   text-align: center;
