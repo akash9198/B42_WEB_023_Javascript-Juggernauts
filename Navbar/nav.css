@@ -1,0 +1,239 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f7f7f7;
+  color: white;
+}
+
+/* 🟢 TOP NAVBAR */
+#topNavbar {
+  background: url(https://adn-static1.nykaa.com/media/wysiwyg/2021/common-strip.jpg);
+  color: white;
+  padding: 12px 0;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-icons {
+  display: flex;
+  gap: 20px;
+  margin: 0 20px;
+}
+
+.top-icons div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.top-icons div:hover {
+  color: #434040;
+}
+
+/* 🟢 MAIN NAVBAR */
+#mainNavbar {
+  background-color: #ffffff;
+  padding: 12px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #f3f3f3;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.left,
+.right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.left {
+  margin-right: auto;
+}
+
+.right {
+  margin-left: auto;
+}
+
+#nykaaLogo {
+  width: 180px;
+  max-height: 50px;
+  object-fit: contain;
+}
+
+.categories {
+  display: flex;
+  gap: 25px;
+}
+
+.categories a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #333;
+  font-size: 16px;
+  transition: color 0.3s, transform 0.2s ease;
+}
+
+.categories a:hover {
+  color: #f05d5d;
+  transform: scale(1.05);
+}
+
+/* Right Section (Search Bar, Account, Cart) */
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #f5f5f5;
+  padding: 6px 12px;
+  border-radius: 10px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+.search-bar i {
+  color: #bbb;
+}
+
+.sign-in-btn {
+  background-color: #e80071;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: inline-block;
+  border: 8px solid #e80071;
+}
+
+.sign-in-btn:hover {
+  background-color: #d15b7d;
+  transform: scale(1.05);
+}
+
+.sign-in-btn:active {
+  background-color: #d15b7d;
+  transform: scale(1);
+}
+
+.cart i {
+  font-size: 28px;
+  color: #383131;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.cart i:hover {
+  color: #e44d4d;
+  transform: scale(1.1);
+}
+
+/* 🟢 CATEGORY BAR */
+#categoryBar {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  background-color: white;
+  padding: 6px 0;
+  border-bottom: 1px solid #f3f3f3;
+}
+
+#categoryBar a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #767272;
+  font-weight: 300;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+#categoryBar a:hover {
+  color: #f05d5d;
+  transform: scale(1.05);
+}
+
+.offers-btn {
+  background-color: rgb(255, 145, 187);
+  color: white;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  border: none;
+}
+
+.offers-btn i {
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+.offers-btn:hover {
+  background-color: #d15b7d;
+  transform: scale(1.05);
+}
+
+.offers-btn:hover i {
+  transform: rotate(15deg);
+}
+
+.offers-btn:active {
+  background-color: #f05d5d;
+  transform: scale(1);
+}
+
+.offers-btn:active i {
+  transform: rotate(0);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .categories {
+    display: none;
+  }
+
+  #nykaaLogo {
+    width: 120px;
+  }
+
+  .search-bar input {
+    width: 100px;
+  }
+
+  #categoryBar {
+    display: none;
+  }
+
+  .right {
+    gap: 15px;
+  }
+}
