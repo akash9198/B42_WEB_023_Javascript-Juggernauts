@@ -1,12 +1,14 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     background-color: #f8f8f8;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;  /* ✅ Allows scrolling when zoomed */
     margin: 0;
+    padding: 10px;
+    overflow-y: auto;  /* ✅ Enables scrolling */
 }
 
 /* Checkout Container */
@@ -16,6 +18,7 @@ body {
     border-radius: 12px;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
     width: 400px;
+    max-width: 100%;
     text-align: center;
     animation: fadeIn 0.5s ease-in-out;
 }
@@ -24,33 +27,43 @@ body {
 .nykaa-logo {
     width: 130px;
     display: block;
-    margin: 0 auto 15px;
+    margin: 0 auto 10px;
+}
+
+/* Heading */
+h2 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 15px;
 }
 
 /* Form Inputs */
 .form-group {
     text-align: left;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
+    margin-right: 14px;
 }
 
 label {
     font-weight: bold;
     font-size: 14px;
     color: #333;
+    display: block;
+    margin-bottom: 5px;
 }
 
 input {
-    width: 95%;
-    padding: 12px;
-    /* margin-top: 5px; */
+    width: 100%;
+    padding: 10px;
     border: 1px solid #ddd;
     border-radius: 6px;
     font-size: 14px;
-    transition: border 0.3s;
+    transition: border 0.3s, box-shadow 0.3s;
 }
 
 input:focus {
     border-color: #fc2779;
+    box-shadow: 0px 0px 8px rgba(252, 39, 121, 0.4);
     outline: none;
 }
 
@@ -71,6 +84,7 @@ button {
     background-color: #fc2779;
     color: white;
     font-size: 16px;
+    font-weight: bold;
     border-radius: 6px;
     cursor: pointer;
     transition: background 0.3s, transform 0.2s;
@@ -93,10 +107,32 @@ button:hover {
     }
 }
 
-/* Responsive */
-@media (max-width: 450px) {
+/* 🔹 Responsive Styling */
+@media (max-width: 768px) {
+    body {
+        align-items: flex-start;
+    }
+
     .checkout-container {
         width: 90%;
+        max-width: 400px;
         padding: 20px;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .checkout-container {
+        width: 95%;
+        padding: 18px;
+    }
+
+    input {
+        padding: 9px;
+    }
+
+    button {
+        padding: 10px;
+        font-size: 15px;
     }
 }
