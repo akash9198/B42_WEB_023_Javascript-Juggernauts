@@ -66,3 +66,12 @@ sliderContainers.forEach(container => {
 });
 
 
+// chatbot
+document.getElementById('chatbot-icon').addEventListener('click', function () {
+    var chatbotContainer = document.getElementById('chatbot-container');
+    if (chatbotContainer.style.display === 'none' || chatbotContainer.style.display === '') {
+        chatbotContainer.style.display = 'block';
+    } else {
+        chatbotContainer.style.display = 'none';
+    }
+});
