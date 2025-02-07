@@ -119,12 +119,12 @@ loginForm?.addEventListener("submit", (e) => {
 
     localStorage.setItem("isLoggedIn", "true");
     alert("Login successful!");
-    window.location.href = "homepage.html";
+    window.location.href = "../Home/home.html";
 });
 
 // Auto Redirect if Logged In
 if (localStorage.getItem("isLoggedIn") === "true" && window.location.pathname.includes("login.html")) {
-    window.location.href = "homepage.html";
+    window.location.href = "../Home/home.html";
 }
 
 // Logout Functionality
