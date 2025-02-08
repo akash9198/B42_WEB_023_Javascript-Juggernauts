@@ -1,6 +1,32 @@
 const heartIcon = document.getElementById('heart-icon');
 const wishlistPopup = document.getElementById('wishlistPopup');
 let heartClicked = false;
+let prodTitle = document.querySelector('#prodTitle');
+let brand = document.querySelector('#brand');
+let price = document.querySelector('#price');
+let desc = document.querySelector('#desc');
+let desc2 = document.querySelector('#desc2');
+
+window.addEventListener('load', ()=> {
+    const params = new URLSearchParams(window.location.search);
+    let obj = JSON.parse(params.get('obj'));
+    console.log("data",obj);
+    prodTitle.innerHTML = obj.name;
+    brand.innerHTML = obj.brand;
+    price.innerHTML = `₹ ${obj.price}`;
+    desc.innerHTML = obj.Description;
+    desc2.innerHTML = obj.Description;
+})
+
+//header
+document.addEventListener("DOMContentLoaded", function () {
+    fetch("../Navbar/nav.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("header").innerHTML = data;
+        })
+        .catch(error => console.error("Error loading header:", error));
+});
 
 heartIcon.addEventListener('click', () => {
     heartIcon.classList.toggle('fa-solid');

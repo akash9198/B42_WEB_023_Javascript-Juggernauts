@@ -15,6 +15,7 @@ body {
 
 .product-header {
     display: flex;
+    gap: 25px;
     flex-wrap: wrap;
     justify-content: space-between;
     position: relative;
@@ -38,6 +39,7 @@ body {
     overflow: hidden;
     border:1px solid lightgrey;
     margin-top:100px;
+    border-radius:20px;
 }
 
 .product-images img {
@@ -225,7 +227,7 @@ select {
 }
 
 .zipcode-input {
-    padding: 10px 10px 10px 30px;
+    padding: 10px 10px 10px 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
     width: 150px;

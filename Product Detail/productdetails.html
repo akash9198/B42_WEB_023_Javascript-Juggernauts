@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <div id="header"> </div>
     <div class="container">
         <div class="product-header">
             <div class="product-images">
@@ -33,7 +34,8 @@
                 </div>
             </div>
             <div class="product-details">
-                <h1 class="product-title">Product Name</h1>
+                 <br><br><br>
+                <h1 id="prodTitle" class="product-title">Product Name</h1>
                 Quantity: <select>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -41,10 +43,10 @@
                     <option value="4">4</option>
                     <option value="5">5</option>
                 </select>
-                <p class="product-brand">Brand Name</p>
-                <p class="product-price">₹2499 <span id="discountprice">2749</span> <span id="discount">10% off</span></p>
+                <p id="brand" class="product-brand">Brand Name</p>
+                <p id="price" class="product-price">₹2499 <span id="discountprice">2749</span> <span id="discount">10% off</span></p>
 
-                <p class="product-description">
+                <p id="desc" class="product-description">
                     This is a short product description. This section will give details about the product such as its
                     features, usage, and benefits. This text can go up to a few lines depending on the content.
                 </p>
@@ -65,13 +67,13 @@
             <i id="heart-icon" class="fa-regular fa-heart"></i>
         </div>
 
-        <div class="description-section">
+        <!-- <div class="description-section">
             <p class="tab-description">
                 This is an expanded product description. Here you can add more detailed information about the product,
                 its uses, how to apply it, benefits, and much more. The content should be informative and helpful to the
                 user so that they can make an informed purchase decision.
             </p>
-        </div>
+        </div> -->
 
         <div class="product-tabs">
             <div class="tabs-nav">
@@ -81,7 +83,7 @@
             </div>
 
             <div class="tab-content tab1 active">
-                <p class="tab-description">
+                <p id="desc2" class="tab-description">
                     Detailed product description. This section can be expanded with more information about the product,
                     including its ingredients, how to use it, etc.
                 </p>
@@ -168,6 +170,7 @@
             </div>
         </div>
     </div>
+    <div id="footer"> </div>
     
     <script src="productdetails.js"></script>
 </body>
