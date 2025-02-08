@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - Nykaa Clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="productdetails.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="product-header">
+            <div class="product-images">
+                <img src="https://images-static.nykaa.com/media/catalog/product/1/8/185023f20714157760_1.jpg" alt="Product Image 1">
+                <img src="https://images-static.nykaa.com/media/catalog/product/1/8/185023f20714157760_2.jpg" alt="Product Image 2">
+                <img src="https://images-static.nykaa.com/media/catalog/product/1/8/185023f20714157760_3.jpg" alt="Product Image 3">
+                <img src="https://images-static.nykaa.com/media/catalog/product/1/8/185023f20714157760_4.jpg" alt="Product Image 4">
+                <img src="https://images-static.nykaa.com/media/catalog/product/1/8/185023f20714157760_5.jpg" alt="Product Image 5">
+                <img src="https://images-static.nykaa.com/media/catalog/product/1/8/185023f20714157760_6.jpg" alt="Product Image 6">
+                <div class="slider-buttons">
+                  <button class="slider-left">&#10094;</button> 
+                  <button class="slider-right">&#10095;</button> 
+                </div>
+                <div class="pagination-dots">
+                  <span class="dot active-dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+            </div>
+            <div class="product-details">
+                <h1 class="product-title">Product Name</h1>
+                Quantity: <select>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <p class="product-brand">Brand Name</p>
+                <p class="product-price">₹2499 <span id="discountprice">2749</span> <span id="discount">10% off</span></p>
+
+                <p class="product-description">
+                    This is a short product description. This section will give details about the product such as its
+                    features, usage, and benefits. This text can go up to a few lines depending on the content.
+                </p>
+
+                <div class="product-reviews">
+                    <span class="review-rating">⭐⭐⭐⭐☆</span>
+                    <span class="review-count" onclick="scrollToReviews()">100 reviews</span>
+                </div>
+
+                <div class="zipcode-container">
+                    <button class="add-to-cart-btn" onclick="addToCart()">Add to Cart</button>
+                    <div class="zipcode-input-container">
+                        <input type="text" class="zipcode-input" placeholder="Enter your Zipcode">
+                    </div>
+                    <a href="#" class="check-availability">Check Availability</a>
+                </div>
+            </div>
+            <i id="heart-icon" class="fa-regular fa-heart"></i>
+        </div>
+
+        <div class="description-section">
+            <p class="tab-description">
+                This is an expanded product description. Here you can add more detailed information about the product,
+                its uses, how to apply it, benefits, and much more. The content should be informative and helpful to the
+                user so that they can make an informed purchase decision.
+            </p>
+        </div>
+
+        <div class="product-tabs">
+            <div class="tabs-nav">
+                <div class="tab-link active" data-tab="tab1">Description</div>
+                <div class="tab-link" data-tab="tab2">Ingredients</div>
+                <div class="tab-link" data-tab="tab3">Reviews</div>
+            </div>
+
+            <div class="tab-content tab1 active">
+                <p class="tab-description">
+                    Detailed product description. This section can be expanded with more information about the product,
+                    including its ingredients, how to use it, etc.
+                </p>
+            </div>
+
+            <div class="tab-content tab2">
+                <p class="tab-description">
+                    Ingredients listed here. This section will include a detailed list of all ingredients used in the
+                    product.
+                </p>
+            </div>
+
+            <div class="tab-content tab3">
+                <h3>Customer Reviews</h3>
+                <div class="reviews-list">
+                    <div class="review">
+                        <div class="review-name">John Doe</div>
+                        <div class="review-rating">⭐⭐⭐⭐☆</div>
+                        <div class="review-comment">
+                            "I loved this product! It works wonders and I use it every day. Highly recommended."
+                        </div>
+                    </div>
+                    <div class="review">
+                        <div class="review-name">Jane Smith</div>
+                        <div class="review-rating">⭐⭐⭐⭐⭐</div>
+                        <div class="review-comment">
+                            "Absolutely amazing! It exceeded my expectations, and I will definitely buy it again."
+                        </div>
+                    </div>
+                    <div class="review">
+                        <div class="review-name">Alice Johnson</div>
+                        <div class="review-rating">⭐⭐⭐☆☆</div>
+                        <div class="review-comment">
+                            "It’s decent but didn’t work as well as I hoped. However, the product is still good quality."
+                        </div>
+                    </div>
+                    <div class="review">
+                        <div class="review-name">Michael Brown</div>
+                        <div class="review-rating">⭐⭐⭐⭐☆</div>
+                        <div class="review-comment">
+                            "Great product overall, I’ve seen noticeable results in a short period of time."
+                        </div>
+                    </div>
+                    <div class="review more-reviews">
+                        <div class="review-name">Emma Wilson</div>
+                        <div class="review-rating">⭐⭐⭐⭐⭐</div>
+                        <div class="review-comment">
+                            "I absolutely love this! It’s a must-have in my daily routine now."
+                        </div>
+                    </div>
+                    <div class="review more-reviews">
+                        <div class="review-name">Sophia Lee</div>
+                        <div class="review-rating">⭐⭐⭐⭐⭐</div>
+                        <div class="review-comment">
+                            "Such a great product! I would recommend this to anyone looking for a reliable solution."
+                        </div>
+                    </div>
+                    
+                </div>
+                <span class="read-more" onclick="toggleReviews('expand')">Read More <i class="fa fa-angle-down"></i></span>
+                <span class="read-less" onclick="toggleReviews('collapse')" style="display: none;">Read Less <i class="fa-duotone fa fa-angle-up"></i></span>
+            </div>
+        </div>
+
+        <div class="wishlist-popup" id="wishlistPopup">
+            Product added to wishlist!
+        </div>
+    </div>
+    <div class="cart-popup" id="cartPopup">
+        <div class="closecart"><i class="fa-sharp fa fa-arrow-left"></i> </div>
+        <hr><hr>
+        <div class="cart-content">
+            <div class="cart-item">
+                <img src="" alt="Product Image" id="cartProductImage" class="cart-item-image">
+                <div class="cart-item-details">
+                    <h3 id="cartProductName">Product Name</h3>
+                    <p>Quantity: <span id="cartProductQuantity">1</span></p>
+                    <p>Total: ₹<span id="cartProductTotal">2499</span></p>
+                </div>
+            </div>
+            <div class="cart-actions">
+                <button class="continue-shopping-btn" onclick="closeCart()">Continue Shopping</button>
+                <button class="proceed-to-checkout">Proceed To checkout</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="productdetails.js"></script>
+</body>
+</html>
