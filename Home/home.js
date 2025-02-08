@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 //footer
 document.addEventListener("DOMContentLoaded", function () {
-    fetch("../Footer/footer.html")
+    fetch("../footer/footer.html")
         .then(response => response.text())
         .then(data => {
             document.getElementById("footer").innerHTML = data;
