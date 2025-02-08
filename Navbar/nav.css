@@ -7,8 +7,6 @@
 
 body {
   font-family: "Inter", sans-serif;
-  /* background-color: #f7f7f7; */
-  /* color: white; */
 }
 
 /* 🟢 TOP NAVBAR */
@@ -60,14 +58,6 @@ body {
   gap: 20px;
 }
 
-.left {
-  margin-right: auto;
-}
-
-.right {
-  margin-left: auto;
-}
-
 #nykaaLogo {
   width: 180px;
   max-height: 50px;
@@ -92,7 +82,7 @@ body {
   transform: scale(1.05);
 }
 
-/* Right Section (Search Bar, Account, Cart) */
+/* 🟢 RIGHT SECTION */
 .search-bar {
   display: flex;
   align-items: center;
@@ -101,8 +91,6 @@ body {
   border-radius: 10px;
   border: 1px solid #e0e0e0;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin-left: 10px;
-  margin-right: 10px;
 }
 
 .search-bar input {
@@ -128,17 +116,12 @@ body {
   text-decoration: none;
   transition: background-color 0.3s ease, transform 0.2s ease;
   display: inline-block;
-  border: 8px solid #e80071;
+  border: none;
 }
 
 .sign-in-btn:hover {
   background-color: #d15b7d;
   transform: scale(1.05);
-}
-
-.sign-in-btn:active {
-  background-color: #d15b7d;
-  transform: scale(1);
 }
 
 .cart i {
@@ -193,30 +176,81 @@ body {
   border: none;
 }
 
-.offers-btn i {
-  font-size: 18px;
-  transition: transform 0.3s ease;
-}
-
 .offers-btn:hover {
   background-color: #d15b7d;
   transform: scale(1.05);
 }
 
-.offers-btn:hover i {
-  transform: rotate(15deg);
+.categories-nav {
+  display: flex;
+  gap: 30px;
+  padding: 10px 0;
+  position: relative;
 }
 
-.offers-btn:active {
-  background-color: #f05d5d;
-  transform: scale(1);
+.category-item {
+  position: relative;
 }
 
-.offers-btn:active i {
-  transform: rotate(0);
+.category-link {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  padding: 5px 0;
+  display: block;
 }
 
-/* Mobile Responsiveness */
+.mega-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  min-width: 800px;
+  display: none;
+  padding: 20px;
+  z-index: 1000;
+}
+
+.category-item:hover .mega-menu {
+  display: flex;
+}
+
+.mega-menu-column {
+  flex: 1;
+  padding: 0 15px;
+  border-right: 1px solid #e5e5e5;
+}
+
+.mega-menu-column:last-child {
+  border-right: none;
+}
+
+.mega-menu-title {
+  color: #333;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.mega-menu-list {
+  list-style: none;
+}
+
+.mega-menu-link {
+  color: #666;
+  text-decoration: none;
+  font-size: 13px;
+  padding: 4px 0;
+  display: block;
+}
+
+.mega-menu-link:hover {
+  color: #ac0967;
+}
+
+/* 🟢 MOBILE RESPONSIVENESS */
 @media (max-width: 768px) {
   .categories {
     display: none;
