@@ -401,6 +401,11 @@ select {
     cursor: pointer;
 }
 
+.proceed-to-checkout>a{
+    text-decoration: none;
+    color: white;
+}
+
 .proceed-to-checkout:hover,
 .continue-shopping-btn:hover {
     background-color: #c2185b;

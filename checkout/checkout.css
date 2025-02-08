@@ -90,6 +90,11 @@ button {
     transition: background 0.3s, transform 0.2s;
 }
 
+button > a {
+    text-decoration: none;
+    color:white;
+}
+
 button:hover {
     background-color: #e51d62;
     transform: scale(1.03);

@@ -12,7 +12,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="nav.css" />
+    <link rel="stylesheet" href="../Navbar/nav.css" />
   </head>
 
   <body>
@@ -49,7 +49,14 @@
           <i class="fa-solid fa-magnifying-glass"></i>
           <input type="text" placeholder="Search on Nykaa" />
         </div>
-        <a href="../sign-in/login.html" class="sign-in-btn"> Sign In </a>
+        <a href="../sign-in/login.html" id="signIn" class="sign-in-btn"> Sign In </a>
+        <i id="user" class="fa-regular fa-user">
+        <div id="userOpt">
+          <a href="">Profile</a>
+          <a href="" onclick="logout()">Logout</a>
+        </div>
+      </i>
+      <span id="username"></span>
         <div class="cart"><i class="fa-solid fa-bag-shopping"></i></div>
       </div>
     </nav>
@@ -63,35 +70,35 @@
             <div class="mega-menu-column">
               <h3 class="mega-menu-title">Face</h3>
               <ul class="mega-menu-list">
-                <li><a href="#" class="mega-menu-link">Face Primer</a></li>
-                <li><a href="#" class="mega-menu-link">Concealer</a></li>
-                <li><a href="#" class="mega-menu-link">Foundation</a></li>
-                <li><a href="#" class="mega-menu-link">Compact</a></li>
-                <li><a href="#" class="mega-menu-link">Contour</a></li>
-                <li><a href="#" class="mega-menu-link">Loose Powder</a></li>
-                <li><a href="#" class="mega-menu-link">Blush</a></li>
+                <li><a href="../All Products/product.html" class="mega-menu-link">Face Primer</a></li>
+                <li><a href="../All Products/product.html" class="mega-menu-link">Concealer</a></li>
+                <li><a href="../All Products/product.html" class="mega-menu-link">Foundation</a></li>
+                <li><a href="../All Products/product.html" class="mega-menu-link">Compact</a></li>
+                <li><a href="../All Products/product.html" class="mega-menu-link">Contour</a></li>
+                <li><a href="../All Products/product.html" class="mega-menu-link">Loose Powder</a></li>
+                <li><a href="../All Products/product.html" class="mega-menu-link">Blush</a></li>
               </ul>
             </div>
             <div class="mega-menu-column">
               <h3 class="mega-menu-title">Eyes</h3>
               <ul class="mega-menu-list">
-                <li><a href="#" class="mega-menu-link">Kajal</a></li>
-                <li><a href="#" class="mega-menu-link">Eyeliner</a></li>
-                <li><a href="#" class="mega-menu-link">Mascara</a></li>
-                <li><a href="#" class="mega-menu-link">Eye Shadow</a></li>
-                <li><a href="#" class="mega-menu-link">Eye Brow</a></li>
-                <li><a href="#" class="mega-menu-link">Eye Primer</a></li>
+                <li><a href="../All Products/product.html" class="mega-menu-link">Kajal</a></li>
+                <li><a href="../All Products/product.html" class="mega-menu-link">Eyeliner</a></li>
+                <li><a href="../All Products/product.html" class="mega-menu-link">Mascara</a></li>
+                <li><a href="../All Products/product.html" class="mega-menu-link">Eye Shadow</a></li>
+                <li><a href="../All Products/product.html" class="mega-menu-link">Eye Brow</a></li>
+                <li><a href="../All Products/product.html" class="mega-menu-link">Eye Primer</a></li>
               </ul>
             </div>
             <div class="mega-menu-column">
               <h3 class="mega-menu-title">Lips</h3>
               <ul class="mega-menu-list">
-                <li><a href="#" class="mega-menu-link">Lipstick</a></li>
-                <li><a href="#" class="mega-menu-link">Liquid Lipstick</a></li>
-                <li><a href="#" class="mega-menu-link">Lip Crayon</a></li>
-                <li><a href="#" class="mega-menu-link">Lip Gloss</a></li>
-                <li><a href="#" class="mega-menu-link">Lip Liner</a></li>
-                <li><a href="#" class="mega-menu-link">Lip Plumper</a></li>
+                <li><a href="../All Products/product.html" class="mega-menu-link">Lipstick</a></li>
+                <li><a href="../All Products/product.html" class="mega-menu-link">Liquid Lipstick</a></li>
+                <li><a href="../All Products/product.html" class="mega-menu-link">Lip Crayon</a></li>
+                <li><a href="../All Products/product.html" class="mega-menu-link">Lip Gloss</a></li>
+                <li><a href="../All Products/product.html" class="mega-menu-link">Lip Liner</a></li>
+                <li><a href="../All Products/product.html" class="mega-menu-link">Lip Plumper</a></li>
               </ul>
             </div>
             <div class="mega-menu-column">
@@ -128,10 +135,10 @@
             <div class="mega-menu-column">
               <h3 class="mega-menu-title">Cleansers</h3>
               <ul class="mega-menu-list">
-                <li><a href="#" class="mega-menu-link">Face Wash</a></li>
-                <li><a href="#" class="mega-menu-link">Cleanser</a></li>
-                <li><a href="#" class="mega-menu-link">Micellar Water</a></li>
-                <li><a href="#" class="mega-menu-link">Face Wipes</a></li>
+                <li><a href="../All Products/product.html" class="mega-menu-link">Face Wash</a></li>
+                <li><a href="../All Products/product.html" class="mega-menu-link">Cleanser</a></li>
+                <li><a href="../All Products/product.html" class="mega-menu-link">Micellar Water</a></li>
+                <li><a href="../All Products/product.html" class="mega-menu-link">Face Wipes</a></li>
               </ul>
             </div>
             <div class="mega-menu-column">
@@ -422,7 +429,7 @@
       </nav>
     </div>
 
-    
+    <script src="../Navbar/nav.js"></script>
 
   </body>
 </html>
