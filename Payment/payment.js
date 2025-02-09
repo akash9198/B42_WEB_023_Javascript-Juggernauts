@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (validateForm()) {
             alert("Payment Successful! Thank you for shopping.");
-            window.location.href = "../Home/home.html"; // Redirect to confirmation page
+            window.location.href = "../index.html"; // Redirect to confirmation page
         } else {
             alert("Please fill in all required fields correctly.");
         }

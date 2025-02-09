@@ -5,6 +5,10 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+img {
+    cursor: pointer;
+}
+
 .slider-container {
     position: relative;
     width: 92%;
@@ -27,6 +31,7 @@
     background-position: center;
     flex: 0 0 auto;
     position: relative;
+    cursor: pointer;
 }
 
 .prev,

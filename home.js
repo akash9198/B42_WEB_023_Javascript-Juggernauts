@@ -78,22 +78,23 @@ document.getElementById('chatbot-icon').addEventListener('click', function () {
 
 // hello username
 window.addEventListener('load', () => {
-    let name = JSON.parse(localStorage.getItem('user')).name;
-    document.getElementById('signIn').style.display = 'none';
-    const user = document.getElementById('user');
-    user.style.display = 'inline';
-    user.addEventListener('mouseover', ()=> {
-        document.getElementById('userOpt').style.display = 'block';
-    });
-    document.getElementById('userOpt').addEventListener('mouseout', ()=> {
-        document.getElementById('userOpt').style.display = 'none';
-    })
-    user.nextElementSibling.innerText = `Hello, ${name}`;
+    if(localStorage.getItem('isLoggedIn')){
+        let name = JSON.parse(localStorage.getItem('user')).name;
+        document.getElementById('signIn').style.display = 'none';
+        const user = document.getElementById('user');
+        user.style.display = 'inline';
+        user.addEventListener('mouseover', ()=> {
+            document.getElementById('userOpt').style.display = 'block';
+        });
+        document.getElementById('userOpt').addEventListener('mouseout', ()=> {
+            document.getElementById('userOpt').style.display = 'none';
+        })
+        user.nextElementSibling.innerText = `Hello, ${name}`;
+    }
 });
 
 function logout() {
     localStorage.removeItem("isLoggedIn");
-    localStorage.removeItem("user");
     alert("Logged out successfully!");
     window.location.href = "index.html";
 }
