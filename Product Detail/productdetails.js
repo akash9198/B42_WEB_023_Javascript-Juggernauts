@@ -144,8 +144,8 @@ setInterval(() => {
 
 let product = {
     name: 'Product Name',
-    image: 'https://images-static.nykaa.com/media/catalog/product/1/8/185023f20714157760_1.jpg',
-    price: 2499,
+    image: 'https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/0/0/0060d708901030561924-new_1.jpg',
+    price: 450,
     quantity: 1
 };
 
