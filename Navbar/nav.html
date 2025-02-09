@@ -12,9 +12,15 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../Navbar/nav.css" />
+    <link rel="stylesheet" href="nav.css"/>
+    <style>
+      .grey a{
+        color: #666; 
+        font-size: 16px;
+        font-weight: 150;
+      }
+    </style>
   </head>
-
   <body>
     <!-- Top Navbar -->
     <header id="topNavbar">
@@ -27,39 +33,189 @@
       </div>
     </header>
 
-    <!-- Main Navbar -->
-    <nav id="mainNavbar">
-      <div class="left">
-        <img
-          id="nykaaLogo"
-          src="https://finshiksha.com/wp-content/uploads/2022/04/Nykaa-Banner-Image.jpg"
-          alt="Nykaa Logo"
-        />
-        <div class="categories">
-          <a href="#">Categories</a>
-          <a href="#">Brands</a>
-          <a href="#">Luxe</a>
-          <a href="#">Nykaa Fashion</a>
-          <a href="#">Beauty Advice</a>
+<!-- Main Navbar -->
+<nav id="mainNavbar">
+  <div class="left">
+    <img id="nykaaLogo" src="https://finshiksha.com/wp-content/uploads/2022/04/Nykaa-Banner-Image.jpg" alt="Nykaa Logo"/>
+    <div class="categories">
+          <!--One-->
+          <a href="#" class="category-link">Categories</a>
+          <!--Two-->
+          <div class="category-item navbar-item1">
+            <a href="#" class="category-link">Brand</a>
+              <div class="dropdown-content1">
+                <div class="brands">
+                    <div class="brand"><img src="image/pic1.jpg" alt="WishCare"><span></span></div>
+                    <div class="brand"><img src="image/pic2.png" alt="Maybelline"><span></span></div>
+                    <div class="brand"><img src="image/pic3.png" alt="Lakme"><span></span></div>
+                    <div class="brand"><img src="image/pic4.png" alt="MAC"><span></span></div>
+                    <div class="brand"><img src="image/pic5.jpg" alt="L'Oreal"><span></span></div>
+                    <div class="brand"><img src="image/pic6.png" alt="Faces Canada"><span></span></div>
+                    <div class="brand"><img src="image/pic7.png" alt="Nykaa"><span></span></div>
+                    <div class="brand"><img src="image/pic8.jpeg" alt="Biotique"><span></span></div>
+                    <div class="brand"><img src="image/pic9.png" alt="Biotique"><span></span></div>
+                    <div class="brand"><img src="image/pic10.png" alt="Biotique"><span></span></div>
+                    <div class="brand"><img src="image/pic11.jpeg" alt="Biotique"><span></span></div>
+                    <div class="brand"><img src="image/pic12.jpg" alt="Biotique"><span></span></div>
+                    <div class="brand"><img src="image/pic13.png" alt="Biotique"><span></span></div>
+                    <div class="brand"><img src="image/pic14.jpg" alt="Biotique"><span></span></div>
+                    <div class="brand"><img src="image/pic15.webp" alt="Biotique"><span></span></div>
+                    <div class="brand"><img src="image/pic16.jpg" alt="Biotique"><span></span></div>
+                    <div class="brand"><img src="image/pic17.jpg" alt="Biotique"><span></span></div>
+                    <div class="brand"><img src="image/pic18.png" alt="Biotique"><span></span></div>
+                    <div class="brand"><img src="image/pic19.png" alt="Biotique"><span></span></div>
+                    <div class="brand"><img src="image/pic20.png" alt="Biotique"><span></span></div>
+                </div>
+             </div>
+          </div>
+          <!--Three-->
+          <div class="category-item">
+            <a href="#" class="category-link">Luxe</a>
+            <div class="mega-menu">
+              <div class="mega-menu-column">
+                <h3 class="mega-menu-title">Makeup Collection</h3>
+                <ul class="mega-menu-list">
+                  <li class="grey"><a href="#">Foundation</a></li>
+                  <li class="grey"><a href="#">Compact</a></li>
+                  <li class="grey"><a href="#">Highlighter</a></li>
+                  <li class="grey"><a href="#">Setting Spray</a></li>
+                  <li class="grey"><a href="#">Primer</a></li>
+                  <li class="grey"><a href="#">Conceater</a></li>
+                  <li class="grey"><a href="#">Blush</a></li>
+                  <li class="grey"><a href="#">Loose Powder</a></li>
+                  <li class="grey"><a href="#">Bronzer</a></li>
+                  <li class="grey"><a href="#">Makeup Remover</a></li>
+                  <li class="grey"><a href="#">Tinted Moisturizer</a></li>
+                  <li class="grey"><a href="#">Contouring</a></li>
+                  <li class="grey"><a href="#">Face Palette</a></li>
+                </ul>
+              </div>
+              <div class="mega-menu-column">
+                <h3 class="mega-menu-title">Eyes</h3>
+                <ul class="mega-menu-list">
+                  <li class="grey"><a href="#">Eye Shadow</a></li>
+                  <li class="grey"><a href="#">Mascara</a></li>
+                  <li class="grey"><a href="#">Eyeliner & Kajal</a></li>
+                  <li class="grey"><a href="#">Brows</a></li>
+                  <li class="grey"><a href="#">Eye Primer</a></li>
+                  <li class="grey"><a href="#">Concealer</a></li>
+                  <li class="grey"><a href="#">Lashes</a></li>
+                </ul>
+              </div>
+              <div class="mega-menu-column">
+                <h3 class="mega-menu-title">Lips</h3>
+                <ul class="mega-menu-list">
+                  <li class="grey"><a href="#">Lipstick</a></li>
+                  <li class="grey"><a href="#">Liquid Lipstick</a></li>
+                  <li class="grey"><a href="#">Lip Balm</a></li>
+                  <li class="grey"><a href="#">Lip Plumper</a></li>
+                  <li class="grey"><a href="#">Lip Liner</a></li>
+                  <li class="grey"><a href="#">Lip Tint</a></li>
+                  <li class="grey"><a href="#">Vasline</a></li>
+                </ul>
+              </div>
+              <div class="mega-menu-column">
+                <h3 class="mega-menu-title">Tools & Brushes</h3>
+                <ul class="mega-menu-list">
+                  <li class="grey"><a href="#">Face Brush</a></li>
+                  <li class="grey"><a href="#">Eye Brush</a></li>
+                  <li class="grey"><a href="#">Applicators</a></li>
+                  <li class="grey"><a href="#">Lip Brush</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!--Four-->
+          <div class="category-item">
+            <a href="#" class="category-link">Nykaa Fashion</a>
+            <div class="mega-menu">
+              <div class="mega-menu-column">
+                <h3 class="mega-menu-title">Women</h3>
+                <ul class="mega-menu-list">
+                  <li class="grey"><a href="#">Westernwear</a></li>
+                  <li class="grey"><a href="#">Footwear</a></li>
+                  <li class="grey"><a href="#">Bags</a></li>
+                  <li class="grey"><a href="#">Lingerie</a></li>
+                  <li class="grey"><a href="#">Sportswear</a></li>
+                  <li class="grey"><a href="#">Sleep & Lounge</a></li>
+                  <li class="grey"><a href="#">Jewellery</a></li>
+                  <li class="grey"><a href="#">Watches</a></li>
+                  <li class="grey"><a href="#">Accessories</a></li>
+                </ul>
+              </div>
+              <div class="mega-menu-column">
+                <h3 class="mega-menu-title">Men</h3>
+                <ul class="mega-menu-list">
+                  <li class="grey"><a href="#">Topwear</a></li>
+                  <li class="grey"><a href="#">Bottomwear</a></li>
+                  <li class="grey"><a href="#">Ethnicwear</a></li>
+                  <li class="grey"><a href="#">Footwear</a></li>
+                  <li class="grey"><a href="#">Athleisure</a></li>
+                  <li class="grey"><a href="#">Innerwear & Sleepwear</a></li>
+                  <li class="grey"><a href="#">Watches</a></li>
+                  <li class="grey"><a href="#">Accessories</a></li>
+                  <li class="grey"><a href="#">Bags</a></li>
+                  <li class="grey"><a href="#">Sleep & Lounge</a></li>
+                </ul>
+              </div>
+              <div class="mega-menu-column">
+                <h3 class="mega-menu-title">Home</h3>
+                <ul class="mega-menu-list">
+                  <li class="grey"><a href="#">Kitchen & Dining</a></li>
+                  <li class="grey"><a href="#">Decor</a></li>
+                  <li class="grey"><a href="#">Bedding</a></li>
+                  <li class="grey"><a href="#">Bath</a></li>
+                  <li class="grey"><a href="#">Storage</a></li>
+                  <li class="grey"><a href="#">Kitchen Appliances</a></li>
+                  <li class="grey"><a href="#">Floor covering</a></li>
+                </ul>
+              </div>
+              <div class="mega-menu-column">
+                <h3 class="mega-menu-title">Top Brands</h3>
+                <ul class="mega-menu-list">
+                  <li class="grey"><a href="#">Forever New</a></li>
+                  <li class="grey"><a href="#">Cider</a></li>
+                  <li class="grey"><a href="#">Na-kid</a></li>
+                  <li class="grey"><a href="#">Vero Moda</a></li>
+                  <li class="grey"><a href="#">Autumnlane</a></li>
+                  <li class="grey"><a href="#">Puma</a></li>
+                  <li class="grey"><a href="#">Skechers</a></li>
+                  <li class="grey"><a href="#">FlabeStreet</a></li>
+                  <li class="grey"><a href="#">Levi's</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!--Five-->
+          <div class="category-item">
+            <div class="dropdown">
+              <a href="#" class="nav-item beauty-advice category-link">Beauty Advice</a>
+              <div class="dropdown-content">
+                  <div class="card">
+                      <img src="image/beauty-book.jpg" alt="Beauty Book">
+                      <h3 class="beauty">BEAUTY BOOK</h3>
+                      <p class="beauty2">Nykaa's Digital Magazine</p>
+                  </div>
+                  <div class="card">
+                      <img src="image/beauty-guides.avif" alt="Beauty Buying Guides">
+                      <h3 style="font-size: 13px; font-weight: 200;">BEAUTY BUYING GUIDES</h3>
+                      <p class="beauty2">Tips To Explore While You Shop</p>
+                  </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
+    </div>
 
       <div class="right">
         <div class="search-bar">
           <i class="fa-solid fa-magnifying-glass"></i>
           <input type="text" placeholder="Search on Nykaa" />
         </div>
-        <a href="../sign-in/login.html" id="signIn" class="sign-in-btn"> Sign In </a>
-        <i id="user" class="fa-regular fa-user">
-        <div id="userOpt">
-          <a href="">Profile</a>
-          <a href="" onclick="logout()">Logout</a>
-        </div>
-      </i>
-      <span id="username"></span>
-        <div class="cart"><i class="fa-solid fa-bag-shopping"></i></div>
-      </div>
-    </nav>
+        <a href="../sign-in/login.html" class="sign-in-btn"> Sign In </a>
+      <div class="cart"><i class="fa-solid fa-bag-shopping"></i></div>
+  </div>
+</nav>
 
     <!-- Category Bar -->
     <div id="categoryBar">
@@ -70,35 +226,35 @@
             <div class="mega-menu-column">
               <h3 class="mega-menu-title">Face</h3>
               <ul class="mega-menu-list">
-                <li><a href="../All Products/product.html" class="mega-menu-link">Face Primer</a></li>
-                <li><a href="../All Products/product.html" class="mega-menu-link">Concealer</a></li>
-                <li><a href="../All Products/product.html" class="mega-menu-link">Foundation</a></li>
-                <li><a href="../All Products/product.html" class="mega-menu-link">Compact</a></li>
-                <li><a href="../All Products/product.html" class="mega-menu-link">Contour</a></li>
-                <li><a href="../All Products/product.html" class="mega-menu-link">Loose Powder</a></li>
-                <li><a href="../All Products/product.html" class="mega-menu-link">Blush</a></li>
+                <li><a href="#" class="mega-menu-link">Face Primer</a></li>
+                <li><a href="#" class="mega-menu-link">Concealer</a></li>
+                <li><a href="#" class="mega-menu-link">Foundation</a></li>
+                <li><a href="#" class="mega-menu-link">Compact</a></li>
+                <li><a href="#" class="mega-menu-link">Contour</a></li>
+                <li><a href="#" class="mega-menu-link">Loose Powder</a></li>
+                <li><a href="#" class="mega-menu-link">Blush</a></li>
               </ul>
             </div>
             <div class="mega-menu-column">
               <h3 class="mega-menu-title">Eyes</h3>
               <ul class="mega-menu-list">
-                <li><a href="../All Products/product.html" class="mega-menu-link">Kajal</a></li>
-                <li><a href="../All Products/product.html" class="mega-menu-link">Eyeliner</a></li>
-                <li><a href="../All Products/product.html" class="mega-menu-link">Mascara</a></li>
-                <li><a href="../All Products/product.html" class="mega-menu-link">Eye Shadow</a></li>
-                <li><a href="../All Products/product.html" class="mega-menu-link">Eye Brow</a></li>
-                <li><a href="../All Products/product.html" class="mega-menu-link">Eye Primer</a></li>
+                <li><a href="#" class="mega-menu-link">Kajal</a></li>
+                <li><a href="#" class="mega-menu-link">Eyeliner</a></li>
+                <li><a href="#" class="mega-menu-link">Mascara</a></li>
+                <li><a href="#" class="mega-menu-link">Eye Shadow</a></li>
+                <li><a href="#" class="mega-menu-link">Eye Brow</a></li>
+                <li><a href="#" class="mega-menu-link">Eye Primer</a></li>
               </ul>
             </div>
             <div class="mega-menu-column">
               <h3 class="mega-menu-title">Lips</h3>
               <ul class="mega-menu-list">
-                <li><a href="../All Products/product.html" class="mega-menu-link">Lipstick</a></li>
-                <li><a href="../All Products/product.html" class="mega-menu-link">Liquid Lipstick</a></li>
-                <li><a href="../All Products/product.html" class="mega-menu-link">Lip Crayon</a></li>
-                <li><a href="../All Products/product.html" class="mega-menu-link">Lip Gloss</a></li>
-                <li><a href="../All Products/product.html" class="mega-menu-link">Lip Liner</a></li>
-                <li><a href="../All Products/product.html" class="mega-menu-link">Lip Plumper</a></li>
+                <li><a href="#" class="mega-menu-link">Lipstick</a></li>
+                <li><a href="#" class="mega-menu-link">Liquid Lipstick</a></li>
+                <li><a href="#" class="mega-menu-link">Lip Crayon</a></li>
+                <li><a href="#" class="mega-menu-link">Lip Gloss</a></li>
+                <li><a href="#" class="mega-menu-link">Lip Liner</a></li>
+                <li><a href="#" class="mega-menu-link">Lip Plumper</a></li>
               </ul>
             </div>
             <div class="mega-menu-column">
@@ -135,10 +291,10 @@
             <div class="mega-menu-column">
               <h3 class="mega-menu-title">Cleansers</h3>
               <ul class="mega-menu-list">
-                <li><a href="../All Products/product.html" class="mega-menu-link">Face Wash</a></li>
-                <li><a href="../All Products/product.html" class="mega-menu-link">Cleanser</a></li>
-                <li><a href="../All Products/product.html" class="mega-menu-link">Micellar Water</a></li>
-                <li><a href="../All Products/product.html" class="mega-menu-link">Face Wipes</a></li>
+                <li><a href="#" class="mega-menu-link">Face Wash</a></li>
+                <li><a href="#" class="mega-menu-link">Cleanser</a></li>
+                <li><a href="#" class="mega-menu-link">Micellar Water</a></li>
+                <li><a href="#" class="mega-menu-link">Face Wipes</a></li>
               </ul>
             </div>
             <div class="mega-menu-column">
@@ -306,6 +462,60 @@
         </div>
 
         <div class="category-item">
+          <a href="#" class="category-link">Mom & Baby</a>
+          <div class="mega-menu">
+            <div class="mega-menu-column">
+              <h3 class="mega-menu-title">Moisturizers</h3>
+              <ul class="mega-menu-list">
+                <li>
+                  <a href="#" class="mega-menu-link"
+                    >Face Moisturizer & Day Cream</a
+                  >
+                </li>
+                <li><a href="#" class="mega-menu-link">Night Cream</a></li>
+                <li><a href="#" class="mega-menu-link">Face Oils</a></li>
+                <li>
+                  <a href="#" class="mega-menu-link">All Purpose Gels/Creams</a>
+                </li>
+              </ul>
+            </div>
+            <div class="mega-menu-column">
+              <h3 class="mega-menu-title">Cleansers</h3>
+              <ul class="mega-menu-list">
+                <li><a href="#" class="mega-menu-link">Face Wash</a></li>
+                <li><a href="#" class="mega-menu-link">Cleanser</a></li>
+                <li><a href="#" class="mega-menu-link">Micellar Water</a></li>
+                <li><a href="#" class="mega-menu-link">Face Wipes</a></li>
+              </ul>
+            </div>
+            <div class="mega-menu-column">
+              <h3 class="mega-menu-title">Trending Searches</h3>
+              <ul class="mega-menu-list">
+                <li>
+                  <a href="#" class="mega-menu-link">Toners under 1000</a>
+                </li>
+                <li>
+                  <a href="#" class="mega-menu-link">Face Wash For Oily Skin</a>
+                </li>
+                <li>
+                  <a href="#" class="mega-menu-link"
+                    >Oil Free Face Moisturizers</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="mega-menu-column">
+              <h3 class="mega-menu-title">Masks</h3>
+              <ul class="mega-menu-list">
+                <li><a href="#" class="mega-menu-link">Sheet Masks</a></li>
+                <li><a href="#" class="mega-menu-link">Sleeping Masks</a></li>
+                <li><a href="#" class="mega-menu-link">Face Packs</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="category-item">
           <a href="#" class="category-link">Health & Wellness</a>
           <div class="mega-menu">
             <div class="mega-menu-column">
@@ -419,17 +629,8 @@
           </div>
         </div>
 
-        <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-      />
-
-      <a href="#" class="offers-btn"> <i class="fas fa-gift"></i> Offers </a> </div>
 
       </nav>
     </div>
-
-    <script src="../Navbar/nav.js"></script>
-
-  </body>
+  </body>
 </html>

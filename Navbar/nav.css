@@ -7,30 +7,8 @@
 
 body {
   font-family: "Inter", sans-serif;
-}
-
-#user {
-  display: none;
-  position: relative;
-}
-
-#userOpt {
-  display: block;
-  display: none  ;
-  border-radius: 6px;
-  padding: 5px;
-  position: absolute;
-  top: 22px;
-  left: -8px;
-  z-index: 2;
-  width: 120px;
-  background-color: rgb(245, 242, 242);
-}
-
-#userOpt>a {
-  display: block;
-  text-decoration: none;
-  padding-bottom: 4px;
+  /* background-color: #f7f7f7; */
+  /* color: white; */
 }
 
 /* 🟢 TOP NAVBAR */
@@ -82,6 +60,14 @@ body {
   gap: 20px;
 }
 
+.left {
+  margin-right: auto;
+}
+
+.right {
+  margin-left: auto;
+}
+
 #nykaaLogo {
   width: 180px;
   max-height: 50px;
@@ -106,7 +92,7 @@ body {
   transform: scale(1.05);
 }
 
-/* 🟢 RIGHT SECTION */
+/* Right Section (Search Bar, Account, Cart) */
 .search-bar {
   display: flex;
   align-items: center;
@@ -115,6 +101,8 @@ body {
   border-radius: 10px;
   border: 1px solid #e0e0e0;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .search-bar input {
@@ -140,12 +128,17 @@ body {
   text-decoration: none;
   transition: background-color 0.3s ease, transform 0.2s ease;
   display: inline-block;
-  border: none;
+  border: 8px solid #e80071;
 }
 
 .sign-in-btn:hover {
   background-color: #d15b7d;
   transform: scale(1.05);
+}
+
+.sign-in-btn:active {
+  background-color: #d15b7d;
+  transform: scale(1);
 }
 
 .cart i {
@@ -200,9 +193,27 @@ body {
   border: none;
 }
 
+.offers-btn i {
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
 .offers-btn:hover {
   background-color: #d15b7d;
   transform: scale(1.05);
+}
+
+.offers-btn:hover i {
+  transform: rotate(15deg);
+}
+
+.offers-btn:active {
+  background-color: #f05d5d;
+  transform: scale(1);
+}
+
+.offers-btn:active i {
+  transform: rotate(0);
 }
 
 .categories-nav {
@@ -269,12 +280,125 @@ body {
   padding: 4px 0;
   display: block;
 }
-
+.same{
+  color: #666;
+  text-decoration: none;
+  font-size: 13px;
+  padding: 4px 0;
+}
 .mega-menu-link:hover {
   color: #ac0967;
 }
 
-/* 🟢 MOBILE RESPONSIVENESS */
+.nav-item {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.beauty-advice {
+  color: #ff1493;
+  cursor: pointer;
+}
+
+.search {
+  margin-left: auto;
+  padding: 5px;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+position: absolute;
+top: 100%;
+left: 0;
+background: white;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+padding: 15px;
+width: 450px;
+display: flex;
+gap: 20px;
+justify-content: center;
+border-radius: 5px;
+opacity: 0; /* Initially Hidden */
+visibility: hidden; /* Prevent interaction */
+transform: translateY(10px); /* Slide effect */
+transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+  z-index: 1000;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.card {
+  width: 180px;
+  
+}
+
+.card img {
+  margin-top:10px;
+  width: 190px;
+  height: 160px;
+  border-radius: 5px;
+  
+}
+
+/* Show dropdown when hovering */
+.dropdown:hover .dropdown-content {
+opacity: 1;
+visibility: visible;
+transform: translateY(0);
+}
+.beauty{
+font-size: 13px; 
+font-weight: 200;
+}
+.beauty2{
+font-size: 11px;
+ color:rgb(125, 121, 121);
+}
+
+.navbar-item1 {
+position: relative;
+cursor: pointer;
+font-weight: bold;
+}
+.dropdown-content1 {
+display: none;
+position: absolute;
+top: 100%;
+left: 0;
+background: #fff;
+padding: 20px;
+border: 1px solid #ddd;
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+width: 720px;
+z-index: 999;
+}
+.navbar-item1:hover .dropdown-content1 {
+display: block;
+opacity: 1;
+visibility: visible;
+transform: translateY(0);
+}
+.brands {
+display: flex;
+flex-wrap: wrap;
+gap: 15px;
+}
+.brand {
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 120px;
+text-align: center;
+}
+.brand img {
+width: 120px;
+height: auto;
+}
+
+/* Mobile Responsiveness */
 @media (max-width: 768px) {
   .categories {
     display: none;
@@ -293,6 +417,6 @@ body {
   }
 
   .right {
-    gap: 15px;
-  }
+    gap:15px;
+}
 }
