@@ -23,7 +23,6 @@ This is a **Nykaa Clone** built using **HTML, CSS, and JavaScript**. Our team of
 ## 📸 Screenshots
 (Add your project screenshots here)
 
-![Screenshot 1![Screenshot 2025-02-09 212911](https://github.com/user-attachments/assets/68be7807-0142-439c-81c0-592b369e9259)
 ](./screenshots/homepage.png)  
 ![Screenshot 2](./screenshots/products.png)  
 ![Screenshot 3](./screenshots/cart.png)  
