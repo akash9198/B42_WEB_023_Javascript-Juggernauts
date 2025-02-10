@@ -1,74 +1,104 @@
-# B42_WEB_023_Javascript-Juggernauts
+# 🌸 Nykaa Clone
 
-## 🚀 Project Overview
+## 📌 Introduction
 
-This is a **Nykaa Clone** built using **HTML, CSS, and JavaScript**. Our team of five members developed this project to replicate the core functionalities of Nykaa, an e-commerce platform for beauty and cosmetic products. This project demonstrates our skills in front-end development, user authentication, and cart management.
+Nykaa Clone is a **frontend web project** that replicates the core functionalities of the Nykaa website. It is built using **HTML, CSS, and JavaScript**, utilizing **local storage** for the product listing page and authentication (signup/signin).
 
-## 📌 Tech Stack
-- HTML
-- CSS
-- JavaScript
+## 🏧️ Project Type
 
-## 📂 Features Implemented
-- ✅ Signup & Signin
-- ✅ Navbar & Footer
-- ✅ Homepage
-- ✅ All Products Page
-- ✅ Single Product View Page
-- ✅ Add to Cart on Single Product View Page
-- ✅ Checkout Page
-- ✅ Payment Page
-- ✅ Static Chatbot for Basic Queries
+🔹 **Frontend**
 
-## 📸 Screenshots
-(Add your project screenshots here)
+## 🌍 Deployed App
 
-](./screenshots/homepage.png)  
-![Screenshot 2](./screenshots/products.png)  
-![Screenshot 3](./screenshots/cart.png)  
+🔗 **Live Site:** [Nykaa Clone](https://nyk-clone.netlify.app/)
 
-## 📜 Installation & Setup
+## ✨ Features
+
+📹 [Feature Demo Video](https://drive.google.com/file/d/1hGgjHcfXA43zpKrZIQNiNKfpDlSbqcIS/view?usp=sharing)
+
+- 📌 Signup & Signin
+- 📌 Navbar & Footer
+- 📌 Homepage
+- 📌 All Products Page
+- 📌 Single Product View Page
+- 📌 Add to Cart on Single Product View Page
+- 📌 Checkout Page
+- 📌 Payment Page
+- 📌 Static Chatbot for Basic Queries
+
+## 🎨 Design Decisions & Assumptions
+
+- 🔹 **Local storage** is used for user authentication and product management.
+- 🔹 The project is **fully frontend-based**, with no backend integration.
+- 🔹 A **simple and clean UI** is implemented for easy navigation.
+
+## 💂️ Directory Structure
+
+```
+nykaa-clone/
+├─ assets/
+├─ css/
+├─ js/
+├─ index.html
+️  ├─ ...
+```
+
+## 🚀 Installation & Getting Started
+
+Follow these steps to set up and run the project locally:
 
 1. Clone the repository:
-   ```sh
-   git clone [https://github.com/akash9198/B42_WEB_023_Javascript-Juggernauts.git]
+   ```bash
+   git clone https://github.com/your-repo/nykaa-clone.git
    ```
-2. Navigate to the project directory:
-   ```sh
-   cd B42_WEB_023_Javascript-Juggernauts
-   ```
-3. Open `index.html` in your browser to run the project.
+2. Open `index.html` in a browser.
 
-## 📌 Folder Structure
-```
-B42_WEB_023_Javascript-Juggernauts/
-│── All Products/
-│── Chatbot/
-│── checkout/
-│── footer/
-│── images/
-│── Navbar/
-│── Payment/
-│── Product Detail/
-│── sign-in/
-│── home.css
-│── home.js
-│── index.html
-│── README.md
-```
+## 🛠️ Usage
 
-## 💡 Future Enhancements
-- Improve chatbot with AI capabilities.
-- Implement backend with Firebase/API for data persistence.
-- Add product filtering and sorting features.
-- Enhance UI/UX for a better user experience.
+- Browse the **product listing page**
+- Signup and Signin using **local storage**
 
-## 🙌 Contributors
-- **[Deepanshi Garg]**  
-- **[Soumen Shit]**  
-- **[Bindu]**  
-- **[Amalika]**  
-- **[Akash]**  
+## 🔑 Credentials
 
-## 📄 License
-This project is for educational purposes only and does not intend to infringe on Nykaa's copyrights.
+Since authentication is handled via local storage, users can create an account via the signup page.
+
+## 🔗 APIs Used
+
+🚫 **None** (fully frontend-based)
+
+## 🏧️ Technology Stack
+
+- 🌐 **HTML**
+- 🎨 **CSS**
+- ⚡ **JavaScript** (Local Storage for data handling)
+
+## 🎥 Video Walkthrough of the Project
+
+📹 [Watch Video](https://drive.google.com/file/d/13r-bruo63JAC3YsFPeZSpSy849rLvBMK/view?usp=sharing)
+
+## 🎥 Video Walkthrough of the Codebase
+
+📹 [Watch Video](https://drive.google.com/file/d/1Noroqpyfi5Z9AAWZzRvtdmPRjcpxyPS7/view?usp=sharing)
+
+## 🚀 Future Enhancements
+
+- 🤖 Improve chatbot with **AI capabilities**.
+- 🟢 Implement **backend with Firebase/API** for data persistence.
+- 🔍 Add **product filtering and sorting** features.
+- 🎨 Enhance **UI/UX** for a better user experience.
+
+## 📝 License
+
+This project is for **educational purposes only** and does not intend to infringe on Nykaa's copyrights.
+
+## 👨‍💻 Contributors
+
+🚀 **Project Developers:**
+
+- 💡 **Deepanshi Garg**
+- 💡 **Soumen Shit**
+- 💡 **Bindu**
+- 💡 **Amalika**
+- 💡 **Akash**
+
+---
