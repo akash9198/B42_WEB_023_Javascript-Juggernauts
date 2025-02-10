@@ -35,12 +35,21 @@ Nykaa Clone is a **frontend web project** that replicates the core functionaliti
 ## 💂️ Directory Structure
 
 ```
-nykaa-clone/
-├─ assets/
-├─ css/
-├─ js/
-├─ index.html
-️  ├─ ...
+B42_WEB_023_Javascript-Juggernauts/
+│── All Products/
+│── Chatbot/
+│── checkout/
+│── footer/
+│── images/
+│── Navbar/
+│── Payment/
+│── Product Detail/
+│── sign-in/
+│── home.css
+│── home.js
+│── index.html
+│── README.md
+folder structure
 ```
 
 ## 🚀 Installation & Getting Started
@@ -49,7 +58,7 @@ Follow these steps to set up and run the project locally:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-repo/nykaa-clone.git
+   git clone https://github.com/akash9198/B42_WEB_023_Javascript-Juggernauts.git
    ```
 2. Open `index.html` in a browser.
 
